@@ -1,0 +1,48 @@
+Script started on Tue Sep  8 01:10:58 2020
+[?1034hbash-3.2$ app[K[K[Ksymfony console cache:clear
+
+[39;49m // [39;49mClearing the cache for the [32mdev[39m environment with debug [32mtrue[39m                                                          
+
+[30;42m                                                                                                                        [39;49m
+[30;42m [OK] Cache for the "dev" environment (debug=true) was successfully cleared.                                            [39;49m
+[30;42m                                                                                                                        [39;49m
+
+bash-3.2$ symfony console make:migration
+
+[33mIn UniqueEntity.php line 24:[39m
+[37;41m                                                                                      [39;49m
+[37;41m  Attempted to load class "Constraint" from namespace "Symfony\Component\Validator".  [39;49m
+[37;41m  Did you forget a "use" statement for "Doctrine\DBAL\Schema\Constraint"?             [39;49m
+[37;41m                                                                                      [39;49m
+
+[32mmake:migration [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] [39m[32m<command>[39m
+
+exit status 255
+bash-3.2$ symfony console make:migration
+
+[33mIn AnnotationException.php line 54:[39m
+[37;41m                                                                                                                                                            [39;49m
+[37;41m  [Semantical Error] The annotation "@Symfony\Component\Validator\Constraints\Slug" in property App\Entity\Conference::$slug was never imported. Did you m  [39;49m
+[37;41m  aybe forget to add a "use" statement for this annotation?                                                                                                 [39;49m
+[37;41m                                                                                                                                                            [39;49m
+
+[32mmake:migration [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] [39m[32m<command>[39m
+
+exit status 1
+bash-3.2$ symfony rre[K[Keq validator 
+[37;41m                                 [39;49m
+[37;41m  Command "req" does not exist.  [39;49m
+[37;41m  Did you mean this?             [39;49m
+[37;41m      check:req                  [39;49m
+[37;41m                                 [39;49m
+bash-3.2$ composer composer er[K[Kreq validator
+
+[37;41m                                                                  [39;49m
+[37;41m  [Symfony\Component\Console\Exception\CommandNotFoundException]  [39;49m
+[37;41m  Command "composer" is not defined.                              [39;49m
+[37;41m                                                                  [39;49m
+
+bash-3.2$ ei[Kxit 
+exit
+
+Script done on Tue Sep  8 01:21:17 2020
