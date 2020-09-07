@@ -51,7 +51,7 @@ class Comment
 
     public function __toString(): string
     {
-        return $this->city.' '.$this->year;
+        return (string) $this->getEmail();
     }
 
     public function getId(): ?int
